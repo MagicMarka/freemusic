@@ -1,3 +1,5 @@
+//----------- MAIN STYLES ----------------//
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -9,16 +11,27 @@ html, body {
 	opacity: 1;
 	z-index: 2;
 }
+
 .center {
 	text-align: center;
 }
+
 .player {
 	background-image: url('../img/image background.jpg');
-
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: #ffffff;
 }
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+.plaing-info {
+	width: 50%;
+}
+//----------- END MAIN STYLES ----------------//
+
+//----------- CHOOSE VIEW -------------//
 .choose-view {
 	width: 100%;
 	height: 26%;
@@ -29,10 +42,10 @@ html, body {
 .choose-view--control {
 	padding: 88px;
 }
-.main {
-	display: flex;
-	justify-content: space-between;
-}
+
+//----------- END CHOOSE VIEW -------------//
+
+//-------- TRACK LIST ---------//
 .list-container {
 	width: 45%;
 }
@@ -52,10 +65,14 @@ html, body {
 	border: none;
 	width: 100%;
 }
+//-------- END TRACK LIST ---------//
+
+//---------- TRACK ---------//
 .track-info {
 	display: flex;
 	align-items: center;
 	max-width: 600px;
+
 }
 .play-icon {
 	position: absolute;
@@ -65,6 +82,18 @@ html, body {
 	padding: 24px 36px;
 	font-size: 26px;
 	font-weight: 400;
+}
+.track-name--title:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.track-info:hover .track-number {
+	opacity: 0;
+}
+.track-info:hover .play-icon {
+	opacity: 1;
+	z-index: 3;
+	transition: opacity .5s ease;
 }
 .track-img {
 	width: 72px;
@@ -80,12 +109,19 @@ html, body {
 .track-name--artist:after {
 	content: " •  ";
 }
+
+//---------- END TRACK ---------// 
+
+//---------- TRACK ACTIONS---------//
 .track-actions {
 	display: flex;
 }
 .like, .action {
 	padding: 0 10px;
 }
+//---------- END TRACK ACTIONS---------//
+
+// -----------------ALBUM VIEW -----------------//
 .album-view {
 	width: 40%;
 	display: flex;
@@ -98,6 +134,9 @@ html, body {
 	width: 530px;
 	height: 530px;
 }
+// ----------------- END ALBUM VIEW -----------------//
+
+// -----------------CONTROL PANEL -----------------//
 .control-panel {
 	width: 95%;
 	margin: 5% auto;
@@ -118,9 +157,10 @@ html, body {
 .control-icon:hover, .control-icon:active {
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
-.plaing-info {
-	width: 50%;
-}
+// ----------------- END CONTROL PANEL -----------------//
+
+
+// -----------------PROGRESS BAR-----------------//
 .progress-panel {
 	width: 100%;
 	position: relative;
@@ -165,6 +205,9 @@ html, body {
 	padding: 0 5px;
 	color:  rgba(255, 255, 255, 0.7);
 }
+// ---------------- END PROGRESS BAR ------------- //
+
+// ---------------- VOLUME ---------------//
 .volume {
 	position: relative;
 	display: flex;
@@ -188,3 +231,4 @@ html, body {
 .volume:hover .volume-range {
 	width: 90%;
 }
+// -------------------- END VOLUME ---------------//
