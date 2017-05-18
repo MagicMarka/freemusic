@@ -14,6 +14,7 @@ html, body {
 }
 .player {
 	background-image: url('../img/image background.jpg');
+
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: #ffffff;
@@ -105,13 +106,17 @@ html, body {
 	justify-content: space-between;
 }
 .controls {
-	width: 15%;
+	width: 23%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 .control-icon {
 	cursor: pointer;
+	padding: 10px;
+}
+.control-icon:hover, .control-icon:active {
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
 .plaing-info {
 	width: 50%;
@@ -159,4 +164,27 @@ html, body {
 .track-length, .album-progress {
 	padding: 0 5px;
 	color:  rgba(255, 255, 255, 0.7);
+}
+.volume {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.volume-range {
+	height: 15px;
+	width: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	max-width: 250px;
+	cursor: pointer;
+	opacity: 1;
+	transition: width .5s ease;
+}
+.volume-range--status {
+	width: 20%;
+	background-color: #ff643b;
+}
+.volume:hover .volume-range {
+	width: 90%;
 }
