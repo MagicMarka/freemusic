@@ -1,5 +1,3 @@
-//----------- MAIN STYLES ----------------//
-
 html, body {
 	height: 100%;
 	width: 100%;
@@ -22,16 +20,7 @@ html, body {
 	font-weight: 400;
 	color: #ffffff;
 }
-.main {
-	display: flex;
-	justify-content: space-between;
-}
-.plaing-info {
-	width: 50%;
-}
-//----------- END MAIN STYLES ----------------//
 
-//----------- CHOOSE VIEW -------------//
 .choose-view {
 	width: 100%;
 	height: 26%;
@@ -42,10 +31,10 @@ html, body {
 .choose-view--control {
 	padding: 88px;
 }
-
-//----------- END CHOOSE VIEW -------------//
-
-//-------- TRACK LIST ---------//
+.main {
+	display: flex;
+	justify-content: space-between;
+}
 .list-container {
 	width: 45%;
 }
@@ -65,9 +54,6 @@ html, body {
 	border: none;
 	width: 100%;
 }
-//-------- END TRACK LIST ---------//
-
-//---------- TRACK ---------//
 .track-info {
 	display: flex;
 	align-items: center;
@@ -109,19 +95,12 @@ html, body {
 .track-name--artist:after {
 	content: " •  ";
 }
-
-//---------- END TRACK ---------// 
-
-//---------- TRACK ACTIONS---------//
 .track-actions {
 	display: flex;
 }
 .like, .action {
 	padding: 0 10px;
 }
-//---------- END TRACK ACTIONS---------//
-
-// -----------------ALBUM VIEW -----------------//
 .album-view {
 	width: 40%;
 	display: flex;
@@ -134,9 +113,6 @@ html, body {
 	width: 530px;
 	height: 530px;
 }
-// ----------------- END ALBUM VIEW -----------------//
-
-// -----------------CONTROL PANEL -----------------//
 .control-panel {
 	width: 95%;
 	margin: 5% auto;
@@ -157,10 +133,11 @@ html, body {
 .control-icon:hover, .control-icon:active {
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
-// ----------------- END CONTROL PANEL -----------------//
+.plaing-info {
+	width: 50%;
+}
 
 
-// -----------------PROGRESS BAR-----------------//
 .progress-panel {
 	width: 100%;
 	position: relative;
@@ -205,9 +182,10 @@ html, body {
 	padding: 0 5px;
 	color:  rgba(255, 255, 255, 0.7);
 }
-// ---------------- END PROGRESS BAR ------------- //
+// END PROGRESS BAR
 
-// ---------------- VOLUME ---------------//
+// VOLUME
+
 .volume {
 	position: relative;
 	display: flex;
@@ -231,4 +209,5 @@ html, body {
 .volume:hover .volume-range {
 	width: 90%;
 }
-// -------------------- END VOLUME ---------------//
+
+// END VOLUME
