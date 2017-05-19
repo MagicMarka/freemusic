@@ -182,9 +182,7 @@ html, body {
 	padding: 0 5px;
 	color:  rgba(255, 255, 255, 0.7);
 }
-// END PROGRESS BAR
 
-// VOLUME
 
 .volume {
 	position: relative;
@@ -210,4 +208,3 @@ html, body {
 	width: 90%;
 }
 
-// END VOLUME
